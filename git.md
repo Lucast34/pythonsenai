@@ -18,5 +18,6 @@
 |git branch -m < nome antigo > < novo nome da branch >| troca o nome da branch 
 |git merge < nome branch >| fundi uma branch com outra 
 |git branch -d < nome da branch >| Excluir uma branch
-|git remote add origin|
-|git push -u origin main|
+|git remote add origin| adicionar repositoro
+|git push -u origin main| mandar para repositorio
+|git pull| atualiza o repositorio sem precisar clonar
