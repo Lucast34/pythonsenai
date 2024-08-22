@@ -9,17 +9,3 @@ elif(mes >= 10):
     print('primavera')
 else:
     print('verao')
-
-
-
-
-
-# match mes:
-#     case 3,4,5,6:
-#         print('outono')
-#     case  7,8,9:
-#         print('inverno')
-#     case 10,11,12:
-#         print ('primavera')
-#     case 1,2:
-#         print ('verão')
