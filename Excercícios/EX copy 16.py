@@ -1,7 +1,4 @@
 # Desenvolva um programa que peça ao usuário um tipo de combustível (gasolina, etanol, diesel) e exiba o preço correspondente por litro.
-from email.policy import default
-
-
 combu = str(input('Qual o combustível que você deseja abastecer:\n'))
 
 match combu:
