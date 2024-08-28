@@ -1,6 +1,7 @@
 
 from os import system
 
+pessoa = []
 
 
 def cadastro ():
@@ -18,10 +19,9 @@ def excluir ():
     return excluir
 
 def lista ():
-    lista = print()
+    lista = print(pessoa)
     return lista
 
-pessoa = []
 
 
 def menu_cadastro():
@@ -40,6 +40,8 @@ while True:
     match opition:
         case 1:
             cadastro ()
+            print('Nome adicionado!')
+            menu_cadastro ()
         case 2:
             atualizar()
         case 3:
