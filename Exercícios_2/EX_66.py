@@ -1,42 +1,34 @@
-# Escreva um algoritmo que forneça um menu para o usuário: 1-Cadastrar nome, 2- atualizar o nome, 3, excluir, 4-listar todos os cadastrados, ao final da operação deve dar uma mensagem indicando o resultado da operação e perguntando se deseja realizar
-# outra operação, o seu aplicativo apenas deve encerrar quando a opção não for inserida.
-import os
+nomes = []
 
-def cadastro ():
-    os.system ('clear')
-    cadastro = input('Qual é o seu nome ?')
-    return cadastro
+#def cadastro ():
+    #cadastro = input('seu nome por favor: ') 
+    #nomes.append
+    #return cadastro
 
-def atualizar ():
-    atualizar = print()
-    return atualizar
+operacao = 'sim'.lower() .strip()
 
-def excluir ():
-    excluir = print()
-    return excluir
-
-def lista ():
-    lista = print()
-    return lista
-
-pessoa = ['nome:']
-
-
-print ('O quê você deseja fazer ?(Aperte 0 se quer sair do programa)')
-print ('1- Cadastrar um nome')
-print ('2- Atualizar o nome')
-print ('3- Excluir')
-print ('4- Listar todo os casdastados')
-
-selecao = input('Insira a opção: ')
-
-while True:
-    match selecao:
+while operacao == 'sim':
+    print('1 cadastre nome ')
+    print('2 atualize nome')
+    print('3 Exclua')
+    print('4 Listar')
+    opcao=int(input('informe a ação desejada: '))
+    match opcao:
         case 1:
-            cadastro()
+            #cadastro
+            nome = input('que nome você deseja cadastrar: ')
+            nomes.append(nome)        
         case 2:
-            atualizar ()
+            print(opcao)
         case 3:
-            excluir()
+            print(opcao)
         case 4:
-            lista()
+            for indice, nome in enumerate (nomes):
+                print(nome)
+        case _:
+            print('opção invalida')
+
+    operacao = input('Desejar realizr mais alguma operação? ').lower() .strip()
+
+    if operacao != 'sim':
+        break
