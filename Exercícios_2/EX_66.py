@@ -1,9 +1,9 @@
 nomes = []
 
-#def cadastro ():
-    #cadastro = input('seu nome por favor: ') 
-    #nomes.append
-    #return cadastro
+def cadastro ():
+    cadastro = input('seu nome por favor: ') 
+    nomes.append
+    return cadastro
 
 operacao = 'sim'.lower() .strip()
 
@@ -15,9 +15,11 @@ while operacao == 'sim':
     opcao=int(input('informe a ação desejada: '))
     match opcao:
         case 1:
-            #cadastro
-            nome = input('que nome você deseja cadastrar: ')
-            nomes.append(nome)        
+            cadastro
+            print('item adcionado')
+            
+            # nome = input('que nome você deseja cadastrar: ')
+            # nomes.append(nome)        
         case 2:
             print(opcao)
         case 3:
