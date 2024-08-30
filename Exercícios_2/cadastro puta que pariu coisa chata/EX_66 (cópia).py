@@ -6,8 +6,7 @@ def cadastro():
     
 
 def atualizar():
-    for indice,nomes in enumerate(nomes):
-    nome_select = input('Qual nome que você deseja Mudar? ')
+    nome_select = input('Qual nome que você deseja Mudar? ').lower
     nome_update = nomes.index(input('Qual será o novo nome? '))
     #nomes.index(nome_update)
     
