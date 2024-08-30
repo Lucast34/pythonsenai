@@ -6,7 +6,7 @@ def cadastro():
     
 
 def atualizar():
-    nome_select = input('Qual nome que você deseja Mudar? ').lower
+    nome_select = input('Qual nome que você deseja Mudar? ')
     nome_update = nomes.index(input('Qual será o novo nome? '))
     #nomes.index(nome_update)
     
@@ -30,14 +30,13 @@ while operacao == 'sim':
     match opcao:
         case 1:
             cadastro()
-            print('cadastro adicionado')
-            
-            # nome = input('que nome você deseja cadastrar: ')
-            # nomes.append(nome)        
+            print('cadastro adicionado')    
         case 2:
             atualizar()
+            print('cadastro atualizado')
         case 3:
             excluir()
+            print('cadastro excluido')
         case 4:
             listar()
 
