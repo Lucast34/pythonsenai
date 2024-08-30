@@ -1,3 +1,5 @@
+import os
+
 nomes = ['Adriano']
 
 def cadastro():
@@ -6,28 +8,33 @@ def cadastro():
     
 
 def atualizar():
-    nome_select =input('Qual nome que você deseja Mudar? ')
-    nome_update = input(f'Qual será o novo nome?{nomes[nome_select]} ')
+    nome = input('Qual nome que você deseja Mudar? ')
+    nome_update = input('qual será o novo nome')
     #atualizado = input(f'Digite o valor para atualizar no item {nomes[val]}: ').strip().capitalize()
-    nome_select =  nome_update
+    nomes[nomes.index(nomes)] =  nome_update
     
 
 def excluir():
     nome_exclusão = input('Qual nome você quer excluir? ')
     nomes.remove(nome_exclusão)
+    for nomes
     # nomes[nomes.remove(nome_exclusão)]
 
 def listar():
-    print(nomes)
+    for indice, nome in enumerate(nomes):
+        print(f'{indice +1} - {nome}')
 
 operacao = 'sim'.lower() .strip()
 
+def menu():
+    opcoes =['Cadatrar nome', 'Atualizar nome', 'Excluir nome', 'Listar nomes']
+
+    for indice, opcoes in enumerate(opcoes):
+        print(f'{indice +1} - {opcoes}')
+
 while operacao == 'sim':
-    print('1 cadastre nome ')
-    print('2 atualize nome')
-    print('3 Exclua')
-    print('4 Listar')
-    opcao=int(input('informe a ação desejada: '))
+    menu()
+    opcao = input('Selecione uma opção ')
     match opcao:
         case 1:
             cadastro()
@@ -45,6 +52,7 @@ while operacao == 'sim':
             print('opção invalida')
 
     operacao = input('Desejar realizr mais alguma operação? ').lower() .strip()
-
+    os.system('clear')
+    
     if operacao != 'sim':
         break
