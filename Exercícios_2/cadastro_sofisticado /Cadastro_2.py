@@ -1,10 +1,5 @@
-#exercicio_66
-
-
 from os import system
-# import modulo
-# from modulo import menu,listar
-import modulo as mo
+import funcoes_cadastro as mo
 
 operacao = 'sim'.lower() .strip()
 
@@ -15,7 +10,7 @@ while operacao == 'sim':
         case 1:
             nome_nv = input('seu nome por favor: ')
             mo.cadastro(nome_nv)
-            print('cadastro adicionado')    
+            print('cadastro adicionado')
         case 2:
             nome_s = input('Qual nome que você deseja Mudar? ')
             nome_update = input('qual será o novo nome')

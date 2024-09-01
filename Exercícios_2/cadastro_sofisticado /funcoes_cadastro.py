@@ -1,4 +1,14 @@
-nomes = []
+nomes = [{
+    'matricula' : '10001',
+    'aluno' :'Lorena',
+    'email' : 'lorena90y@gmail.com'
+},
+{
+    'matricula' : '23242',
+    'aluno' : 'Carlos',
+    'email' : 'carlos2324@outlook.com'
+}
+]
 
 def cadastro(nome_nv):
     nomes.append(nome_nv)
