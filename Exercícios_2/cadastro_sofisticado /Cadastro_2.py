@@ -8,7 +8,10 @@ while operacao == 'sim':
     opcao = int(input('Selecione uma opção '))
     match opcao:
         case 1:
-            nome_nv = input('seu nome por favor: ')
+            nome_nv = input('Nome do aluno: ')
+            email_nv = input('O email do aluno: ')
+            numero_matricula = input('')
+            
             mo.cadastro(nome_nv)
             print('cadastro adicionado')
         case 2:
