@@ -1,21 +1,22 @@
-from os import system 
+from os import system
 
-tabuleiro = [0,1,2,3,4,5,6,7,8]
+tabuleiro = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
 
 def desenhar_tabuleiro():
     system('clear')
-    for indice,casa in enumerate(tabuleiro):
-        if indice == 2 or indice == 5 or indice == 8 :
+    for indice, casa in enumerate(tabuleiro):
+        if indice == 2 or indice == 5 or indice == 8:
             print(casa)
         else:
             print(casa, end=' | ')
 
 
-def jogar (jogada, jogador):
+def jogar(jogada, jogador):
     tabuleiro[jogada] = jogador
 
 
-def troca (jogador):
+def troca(jogador):
     jog = jogador
     if jog == 'X':
         jog = 'O'
@@ -23,17 +24,18 @@ def troca (jogador):
         jog = 'X'
     return jog
 
+
 def vitoria():
-    if (tabuleiro[0] ==  tabuleiro[1] ==  tabuleiro[2] or
-            tabuleiro[3] ==  tabuleiro[4] ==  tabuleiro[5] or
-            tabuleiro[6] ==  tabuleiro[7] ==  tabuleiro[8]):
-            return True
-    elif (tabuleiro[0] ==  tabuleiro[3] ==  tabuleiro[6] or
-            tabuleiro[1] ==  tabuleiro[4] ==  tabuleiro[7] or
-            tabuleiro[2] ==  tabuleiro[5] ==  tabuleiro[8]):
-            return True
-    elif (tabuleiro[0] ==  tabuleiro[4] ==  tabuleiro[8] or
-        tabuleiro[2] ==  tabuleiro[4] ==  tabuleiro[6]):
-            return True
+    if (tabuleiro[0] == tabuleiro[1] == tabuleiro[2] or
+            tabuleiro[3] == tabuleiro[4] == tabuleiro[5] or
+            tabuleiro[6] == tabuleiro[7] == tabuleiro[8]):
+        return True
+    elif (tabuleiro[0] == tabuleiro[3] == tabuleiro[6] or
+            tabuleiro[1] == tabuleiro[4] == tabuleiro[7] or
+            tabuleiro[2] == tabuleiro[5] == tabuleiro[8]):
+        return True
+    elif (tabuleiro[0] == tabuleiro[4] == tabuleiro[8] or
+          tabuleiro[2] == tabuleiro[4] == tabuleiro[6]):
+        return True
     else:
         return False

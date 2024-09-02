@@ -1,4 +1,4 @@
-#exercicio_66
+# exercicio_66
 
 
 from os import system
@@ -15,7 +15,7 @@ while operacao == 'sim':
         case 1:
             nome_nv = input('seu nome por favor: ')
             mo.cadastro(nome_nv)
-            print('cadastro adicionado')    
+            print('cadastro adicionado')
         case 2:
             nome_s = input('Qual nome que você deseja Mudar? ')
             nome_update = input('qual será o novo nome')
@@ -32,6 +32,6 @@ while operacao == 'sim':
 
     operacao = input('Desejar realizr mais alguma operação? ').lower() .strip()
     system('clear')
-    
+
     if operacao != 'sim':
         break
