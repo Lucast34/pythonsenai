@@ -2,17 +2,17 @@ from os import system
 import funcoes_cadastro as mo
 
 operacao = 'sim'.lower() .strip()
-
+matricula = 1
 while operacao == 'sim':
     mo.menu()
     opcao = int(input('Selecione uma opção '))
     match opcao:
         case 1:
             nome_nv = input('Nome do aluno: ')
-            email_nv = input('O email do aluno: ')
-            numero_matricula = input('')
-            
-            mo.cadastro(nome_nv)
+            email = input('O email do aluno: ')
+            data_nascimento = input('')
+            matricula+=1
+            mo.cadastro(nome_nv, email, data_nascimento,matricula)
             print('cadastro adicionado')
         case 2:
             nome_s = input('Qual nome que você deseja Mudar? ')
