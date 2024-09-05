@@ -3,5 +3,7 @@ venv
 .vscode
 Exercícios_2/cadastro/__pycache__
 Exercícios_2/jogo da velha/__pycache__
+py/aula09/.ipynb_checkpoints
+notebooks/.ipynb_checkpoints
 
 

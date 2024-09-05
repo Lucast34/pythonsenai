@@ -1,3 +1,4 @@
+from calendar import c
 from os import system
 
 tabuleiro = [0, 1, 2, 3, 4, 5, 6, 7, 8]
@@ -31,8 +32,8 @@ def vitoria():[
     (0, 4, 8), (2, 4, 6)
 ]
 
-for a, b, c in numeros:
-    return True
+tabuleiro any a,b,c:
+    
 
     # if (tabuleiro[0] == tabuleiro[1] == tabuleiro[2] or
     #         tabuleiro[3] == tabuleiro[4] == tabuleiro[5] or
