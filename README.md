@@ -2,12 +2,12 @@
 
 |aula|descrição|link|
 |-|-|-|
-|01| introdução ao curso|
-|02| introdução a linguagem markdown|[aqui](./markdown.md)
-|03| compreendendo GIT|[aqui](./git.md) 
+|01| Introdução ao curso|
+|02| Introdução a linguagem markdown|[aqui](./markdown.md)
+|03| Compreendendo GIT|[aqui](./git.md) 
 |04| Pynthon conceitos básicos|[aqui](./py/aula04/aula04E.py) 
 |05| If, else, elif, and, or e not |[aqui](./py/aula05/aula05E.py)
-|06| |[Aqui](.py/aula06/aula06E.py)
+|06| Match case|[Aqui](./py/aula06/aula06E.py)
 
 # Exemplos de cada aula
 |Aula|Exemplos|Arquivo|
