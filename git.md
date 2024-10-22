@@ -4,8 +4,8 @@
 |-|-|
 |git init| inicia o monitoramento
 |git branch -M main|Renomeia a branch principal
-|git add < arquivo >| manda os arquivos para de staging 
-|git status| verifica o stadio dos arquivos 
+|git add < arquivo >| manda os arquivos para "aguardo" 
+|git status| verifica o estado dos arquivos 
 |git config --global user.name "nome"| configura o usario git
 |git config --global user.email "email"| configura o o email do usario git
 |git config --list| lista as configuraçôes git
